@@ -1,35 +1,36 @@
 package be.abis.exercice01.com.model;
 
 public abstract class LanComponent {
-    public String Address ="";
-    public LanComponent nextComponent= null;
-    private LanComponent lan;
+    public String address ="";
+    public LanComponent nextComponent;
+
+    public LanComponent(String address){
+        this.address = address;
+    }
     public LanComponent getNextComponent(){
-        return lan;
+        return nextComponent;
     }
     public void setNextComponent (LanComponent lanComp){
-        this.lan = lanComp;
+        this.nextComponent = nextComponent;
     }
 
     public String getAddress() {
-        return Address;
+        return address;
     }
 
     public void setAddress(String address) {
-        Address = address;
+        address = address;
     }
 
     public LanComponent getLan() {
-        return lan;
+        return nextComponent;
     }
 
-    public void setLan(LanComponent lan) {
-        this.lan = lan;
-    }
-    public void send(Packet packet){
 
-    }
-    public void receive(Packet packet){
+    public abstract void send(Packet packet);
 
-    }
+
+    public abstract void receive(Packet packet);
+
+
 }

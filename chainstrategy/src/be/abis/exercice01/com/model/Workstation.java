@@ -2,10 +2,10 @@ package be.abis.exercice01.com.model;
 
 public class Workstation extends Node {
     String workstationName = "";
-    public Workstation(String workstationName){
-        this.workstationName = workstationName;
+    public Workstation(String address){
+        super(address);
     }
-    public void Originate (Packet packet){
-
+    public void originate (Packet packet){
+         this.send(packet);
     }
 }

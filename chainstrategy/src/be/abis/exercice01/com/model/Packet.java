@@ -1,8 +1,8 @@
 package be.abis.exercice01.com.model;
 
 public class Packet {
-    String destinationAdress;
-    String contents;
+    private String destinationAdress;
+    private String contents;
 
     public Packet(String destinationAdress, String contents) {
         this.destinationAdress = destinationAdress;
