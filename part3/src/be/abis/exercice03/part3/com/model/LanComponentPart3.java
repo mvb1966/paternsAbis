@@ -14,6 +14,7 @@ public abstract class LanComponentPart3 {
         return nextComponent;
     }
     public void setNextComponent (LanComponentPart3 nextComponent){
+
         this.nextComponent = nextComponent;
     }
 

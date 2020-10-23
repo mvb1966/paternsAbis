@@ -11,13 +11,14 @@ public class PrintServerPart3 extends PacketReceiveHandler {
     public void process(PacketPart3 packet){
 
         if(packet.getDestinationAdress().equals(address)){
-            printer.print(packet);
+            //printer.print(packet); of
+            this.print(packet);
         } else {
             this.send(packet);
         }
-    }/*
-    public void print (PacketPart2 packet){
-        System.out.println("the packet is printed by "+ getClass().getSimpleName()+ " with content " + packet.getContents());
-
-    }*/
+    }
+    public void print (PacketPart3 packet){
+        //System.out.println("the packet is printed by "+ getClass().getSimpleName()+ " with content " + packet.getContents());
+        printer.print(packet);
+    }
 }

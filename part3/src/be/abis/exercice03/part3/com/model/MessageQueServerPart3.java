@@ -8,7 +8,7 @@ public class MessageQueServerPart3 extends PacketReceiveHandler {
 
     @Override
     public void process(PacketPart3 packet){
-        System.out.println("fileserver verwerking");
+        System.out.println("messageQ verwerking");
     }
 }
 

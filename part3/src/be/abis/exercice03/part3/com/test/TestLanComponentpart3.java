@@ -4,8 +4,10 @@ package be.abis.exercice03.part3.com.test;
 import be.abis.exercice03.part3.com.model.*;
 
 public class TestLanComponentpart3 {
+/*
+
     public TestLanComponentpart3(){
-        PacketPart3 packet1 = new PacketPart3("print2","eindelijk gevonden de messageQ");
+        PacketPart3 packet1 = new PacketPart3("print2","eindelijk gevonden de messagege Q");
         PacketPart3 packet2 = new PacketPart3("print3","eindelijk gevonden de 3 d");
         PacketPart3 packet3 = new PacketPart3("print1","eindelijk gevonden de laser printer");
         PacketPart3 packet4 = new PacketPart3("print4","eindelijk gevonden de inktjet");
@@ -14,19 +16,22 @@ public class TestLanComponentpart3 {
 
         LanComponentPart3 n1 = new NodePart3("firstNode");
         PrintStrategyPart3 laser = new LaserPrinterPart3();
+
         LanComponentPart3 p1 = new PrintServerPart3("print1",laser);
         LanComponentPart3 n2 = new NodePart3("secondNode");
-        LanComponentPart3 p2 = new MessageQueServerPart3("message q boodschap");
+
+        LanComponentPart3 p2 = new MessageQueServerPart3("print3");
 
         LanComponentPart3 n3 = new NodePart3("thirdNode");
         PrintStrategyPart3 threeD = new ThreeD_PrinterPart3();
+
         LanComponentPart3 p3 = new PrintServerPart3("print2", threeD);
         LanComponentPart3 n4 = new NodePart3("Node4");
 
         PrintStrategyPart3 inktjet = new InktjetPart3();
         LanComponentPart3 p4 = new PrintServerPart3("print4", inktjet);
         LanComponentPart3 n5 = new NodePart3("Node5");
-        LanComponentPart3 p5 = new FileserverPart3("fileserver boodschap");
+        LanComponentPart3 p5 = new FileserverPart3("print5");
 
         w1.setNextComponent(n1);
         n1.setNextComponent(p1);
@@ -42,11 +47,24 @@ public class TestLanComponentpart3 {
 
         if (w1 instanceof WorkstationPart3){
             ( (WorkstationPart3) w1).originate(packet1);
+            System.out.println("einde 1");
+
             ( (WorkstationPart3) w1).originate(packet2);
+            System.out.println("einde 2");
             ( (WorkstationPart3) w1).originate(packet3);
+            System.out.println("einde 3");
             ( (WorkstationPart3) w1).originate(packet4);
+            System.out.println("einde 4");
             ( (WorkstationPart3) w1).originate(packet5);
+            System.out.println("einde 5");
         }
+    }
+
+ */
+    public TestLanComponentpart3(){
+        Facade facade = new Facade(this);
+        facade.initialize();
+        facade.runProgram();
     }
     public static void main (String[] args){
         TestLanComponentpart3 a = new TestLanComponentpart3();
