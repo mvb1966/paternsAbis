@@ -1,16 +1,8 @@
 package be.abis.exercice01.part2.com.test;
 
-import be.abis.exercice01.part2.com.model.*;
-import be.abis.exercice01.part2.com.model.Inktjet;
-import be.abis.exercice01.part2.com.model.LaserPrinter;
-import be.abis.exercice01.part2.com.model.PacketPart2;
-import be.abis.exercice01.part2.com.model.PrintServerPart2;
-import be.abis.exercice01.part2.com.model.PrintStrategy;
-import be.abis.exercice01.part2.com.model.WorkstationPart2;
-import be.abis.exercice01.part2.com.model.LanComponentPart2;
-import be.abis.exercice01.part2.com.model.NodePart2;
 
-import javax.print.attribute.standard.PrinterState;
+import be.abis.exercice01.part2.com.model.*;
+import be.abis.exercice01.part2.model.*;
 
 public class TestLanComponentpart2 {
     public TestLanComponentpart2(){

@@ -1,8 +1,6 @@
 package be.abis.exercice01.part2.com.model;
 
 
-import be.abis.exercice01.part2.com.model.PacketPart2;
-
 public abstract class LanComponentPart2 {
     public String address ="";
 

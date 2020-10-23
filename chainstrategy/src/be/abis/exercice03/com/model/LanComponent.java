@@ -10,7 +10,7 @@ public abstract class LanComponent {
     public LanComponent getNextComponent(){
         return nextComponent;
     }
-    public void setNextComponent (LanComponent lanComp){
+    public void setNextComponent (LanComponent nextComponent){
         this.nextComponent = nextComponent;
     }
 
@@ -22,10 +22,7 @@ public abstract class LanComponent {
         address = address;
     }
 
-    public LanComponent getLan() {
-        return nextComponent;
-    }
-
+    
 
     public abstract void send(Packet packet);
 
